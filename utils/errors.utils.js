@@ -28,11 +28,11 @@ module.exports.signInErrors = (error) => {
     let errors = { email:"", password:""}
   
   
-    if (error.message.includes('email')) {
+    if (error.message.includes('Email')) {
       errors.email = "Email incorrect"
     }
   
-    if (error.message.includes('password')) {
+    if (error.message.includes('Mot de passe')) {
       errors.password = "Mot de passe incorrect"
     }
   

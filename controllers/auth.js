@@ -44,7 +44,7 @@ module.exports.signIn = async(req, res) => {
     
   } catch (error) {
     const errors = signInErrors(error)
-    res.status(400).json({errors})
+    res.status(200).json({errors})
   }
 }
 
